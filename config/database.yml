@@ -82,3 +82,8 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
+
+development:
+  adapter: postgresql
+  database: rails-prueba
+  pool: 5
